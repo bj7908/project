@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>신청하기를 누르시오</title>
+    <style>
+        .table, th, td{
+            border: 1px solid black;
+            border-collapse:collapse;
+            padding: 2px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>교육일정</p>
+    <table class="table">
+        <tr>
+            <th>회차</th>
+            <th>일시</th>
+            <th>접수기간</th>
+            <th>장소</th>
+            <th>인원</th>
+            <th>신청하기</th>
+        </tr>
+        <tr>
+            <td>1회차</td>
+            <td>2019.7.10(수)~2019.7.12(금)</td>
+            <td>2019.7.10(수)~2019.7.12(금)</td>
+            <td>한화비즈메트로(증미역)</td>
+            <td>20명</td>
+            <td>
+                <form>
+                    <div class="info" onClick="winOpen();"><input type="button" value="신청"></div>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>2회차</td>
+            <td>2019.12월 예정</td>
+            <td>2019.12월 예정</td>
+            <td>한화비즈메트로(증미역)</td>
+            <td>20명</td>
+            <td>
+                <form>
+                    <div class="info" onClick="winOpen();"><input type="button" value="신청"></div>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+<script>
+    var win;
+    function winOpen(){
+        win = window.open('info.html','child','width=500,height=300')
+    };
+</script>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>교육 등록 정보</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>회사명</td>
+                <td><input type="text" name="name" id="input1"></td>
+            </tr>
+            <tr>
+                <td>성명</td>
+                <td><input type="text" name="text1" id="input2"></td>
+            </tr>
+            <tr>
+                <td>부서</td>
+                <td><input type="text" name="text2" id="input3"></td>
+            </tr>
+            <tr>
+                <td>직위</td>
+                <td><input type="text" name="text3" id="input4"></td>
+            </tr>
+            <tr>
+                <td>전화번호</td>
+                <td><input type="text" name="text4" id="input5"></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td><input type="email" name="email" id="input6"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="input()">제출</button></td>
+                
+            </tr>
+            
+        </table>
+    </form>
+</body>
+</html>
+
+
+<script type="text/javascript">
+    var temp;
+    
+    function input(){
+        var input=[];
+        input[0] = document.getElementById("input1").value;
+        input[1] = document.getElementById("input2").value;
+        console.log(input[1]);
+    };
+</script>
+<!--<input type="text" id="input"><br>
+<textarea id="output"></textarea>
+<button onclick="input()">입력받기</button>
+<button onclick="output()">출력하기</button-->
+
+
+<!-- 아래부터 자바스크립트 -->
+<!--<script type="text/javascript">
+var temp; 
+
+function input(){
+var input = document.getElementById("input").value; 
+temp = input;
+}
+
+function output(){
+document.getElementById("output").value = temp;
+}
+</script>-->
