@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>적정체중 구하기</title>
+</head>
+    <script>
+        var name = prompt("당신의 이름은?",""),
+            height = prompt("당신의 키는?","0"),
+            weight = prompt("당신의 몸무게는?","0");
+        
+        /*parseInt : 숫자를 정수로 만듬(소숫점 버림)*/
+        var nomal = parseInt((height-100)*0.9);
+        var result = nomal-weight;
+        console.log(result);
+        document.write(`신장: ${height}(cm)<br>`);
+        document.write(`체중: ${weight}(kg)<br>`);
+        document.write(`적정 체중: (${height}-100)x0.9 = ${nomal}(kg)<br>`);
+        
+        if(result < 0){
+            document.write(`결과: ${name}님의 적정 체중은 ${nomal}kg이며, 현재 적정체중에서 ${result}kg 초과한 것을 알 수 있습니다.`);
+        }else if(result > 0){
+            document.write(`결과: ${name}님의 적정 체중은 ${nomal}kg이며, 현재 적정체중에서 ${result}kg 미만인 것을 알 수 있습니다.`);
+        }else{
+            document.write(`결과: ${name}님은 적정 체중(${nomal}kg) 입니다.`);
+        }
+        
+
+    </script>
+<body>
+    
+</body>
+</html>
