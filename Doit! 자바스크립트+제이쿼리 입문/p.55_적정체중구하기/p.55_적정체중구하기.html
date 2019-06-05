@@ -9,7 +9,7 @@
             height = prompt("당신의 키는?","0"),
             weight = prompt("당신의 몸무게는?","0");
         
-        /*parseInt : 숫자를 정수로 만듬(소숫점 버림)*/
+        /*parseInt : 숫자를 정수로 만듬(소수점 버림)*/
         var nomal = parseInt((height-100)*0.9);
         var result = nomal-weight;
         console.log(result);
@@ -24,7 +24,6 @@
         }else{
             document.write(`결과: ${name}님은 적정 체중(${nomal}kg) 입니다.`);
         }
-        
 
     </script>
 <body>
