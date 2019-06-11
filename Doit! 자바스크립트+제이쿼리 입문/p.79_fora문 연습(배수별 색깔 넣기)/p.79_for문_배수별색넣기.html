@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>배수별 색넣기</title>
+    <style>
+        .red{
+            color:red;
+        }
+        .green{
+            color:green;
+        }
+        .aqua{
+            color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        for(var i = 1 ; i<=100 ; i++){
+            if(i%5 == 0 && i%7 == 0){
+                document.write("<p class='red'>"+i+"</p>");
+            }else if(i%5 == 0){
+                document.write("<p class='green'>"+i+"</p>");
+            }else if(i%7 == 0){
+                document.write("<p class='aqua'>"+i+"</p>");
+            }
+        }
+    </script>
+</body>
+</html>
