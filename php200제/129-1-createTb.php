@@ -4,14 +4,14 @@
     $dropOutOld = "CREATE TABLE dropOutOld(";
     $dropOutOld .= "dropOutOldID INT UNSIGNED NOT NULL AUTO_INCREMENT,";
     $dropOutOld .= "name VARCHAR(10) NOT NULL,";
-    $dropOutOld .= "email VARCHAR(10) NOT NULL,";
+    $dropOutOld .= "email VARCHAR(30) NOT NULL,";
     $dropOutOld .= "PRIMARY KEY(dropOutOldID))";
     $dropOutOld .= "CHARSET=utf8";
 
     $dropOutNew = "CREATE TABLE dropOutNew(";
     $dropOutNew .= "dropOutNewID INT UNSIGNED NOT NULL AUTO_INCREMENT,";
     $dropOutNew .= "name VARCHAR(10) NOT NULL,";
-    $dropOutNew .= "email VARCHAR(10) NOT NULL,";
+    $dropOutNew .= "email VARCHAR(30) NOT NULL,";
     $dropOutNew .= "PRIMARY KEY(dropOutNewID))";
     $dropOutNew .= "CHARSET=utf8";
 
