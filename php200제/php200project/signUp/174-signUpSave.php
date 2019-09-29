@@ -106,7 +106,7 @@
         if($result){
             $_SESSION['memberID'] = $dbConnect->insert_id;
             $_SESSION['nickName'] = $nickName;
-            Header("Location:../inddex.php");
+            Header("Location:../index.php");
         }else{
             echo '회원가입 실패 - 관리자에게 문의';
             exit;
