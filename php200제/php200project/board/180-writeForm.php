@@ -9,7 +9,7 @@
     <title></title>
 </head>
 <body>
-    <form name="boardWrite" method="post" action="181-savaBoard.php">
+    <form name="boardWrite" method="post" action="181-saveBoard.php">
         제목
         <br>
         <br>
