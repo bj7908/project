@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 종합실습1-1 </title>
+<script>
+	/*var price1 = 3000;
+	var price2 = 6000;
+	var price3 = 3000;
+
+    var price = price1+price2+price3;
+    var priceM = price-10000;
+    
+    var won = price>10000 ? priceM+"원 초과" : "돈 관리 잘 했어요!";
+    document.write(won);*/
+    
+    
+    //현재 요일 구하기
+    var today =new Date();
+    var nowMonth = today.getMonth(),
+        nowDate = today.getDate(),
+        nowDay = today.getDay();
+    
+    document.write("<h2>오늘 날짜 정보</h2>");
+    document.write("현재 월: "+nowMonth,"<br>");
+    document.write("현재 일: "+nowDate,"<br>");
+    document.write("현재 요일: "+nowDay,"<br>");
+    
+    //수학객체
+    var num = 2.1234;
+    
+    var maxNum = Math.max(10,5,8,30),
+        minNum = Math.min(10,5,8,30),
+        roundNum = Math.round(num),
+        floorNum = Math.floor(num),
+        ceilNum = Math.ceil(num),
+        rndNum = Math.floor(Math.random()*11),
+        piNum = Math.PI;
+    
+    document.write(maxNum,"<br>");
+    document.write(minNum,"<br>");
+    document.write(roundNum,"<br>");
+    document.write(floorNum,"<br>");
+    document.write(ceilNum,"<br>");
+    document.write(rndNum,"<br>");
+    document.write(piNum,"<br>");
+</script>
+</head>
+<body>
+</body>
+</html>
