@@ -5,11 +5,28 @@
 	<title> 논리연산자 </title>
 <script>
 	var a = 10, 
-					b= 20, 
-					c = 0, 
-					d = "hello";
+        b= 20, 
+        c = 0, 
+        d = "hello";
 	var result;
 
+    result = b > a || b <= c || a > c; // true || false || true   => true
+	document.write(result, "<br>");
+
+	result = a > b || b < c || d; //false || false || true ==> true
+	document.write(result, "<br>");
+
+	result = a <= b && b >= c && c > a; //true && true && false ==> false
+	document.write(result, "<br>");
+
+	result = a <= b && c && b >= c; //true && false && true ==> false
+	document.write(result, "<br>");
+
+	result= !(a > b); //!(false) ==> true
+	document.write(result, "<br>");
+    
+    result = c && d;
+    document.write(result);
 </script>
 </head>
 <body>
