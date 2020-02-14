@@ -6,6 +6,20 @@
 <script>
 	var count = 0;
 
+    myFnc();
+    
+    function myFnc() {
+        count++;
+        document.write("Hello"+count,"<br>");
+    }
+    
+    myFnc();
+    
+    var theFnc = function(){
+        count++;
+        document.write("bye"+count,"<br>");
+    }
+    theFnc();
 </script>
 </head>
 <body>
