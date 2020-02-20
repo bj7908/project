@@ -4,7 +4,17 @@
 <meta charset = "UTF-8">
 <title> 함수 </title>
 <script>
-
+    //같은 함수가 있어도 마지막함수만 된다.
+    var num = 100;
+    function menu(){
+        num += 100;
+        alert(num);
+    }
+    menu();
+    
+    function menu(){
+        alert(num);
+    }
 </script>
 </head>
 <body>
