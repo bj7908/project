@@ -5,8 +5,16 @@
 <title> 선택자 </title>  
 <script src="js/jquery.js"></script>
 <script>
+    //선택자 찾아서 내용바꾸기
 $(function(){
-	
+	$(".wrap_1 p:first").text("내용1");
+    $(".wrap_1 p.active").removeClass("active").addClass("on");
+    $(".wrap_1 p:eq(2) a").attr("href","http://www.naver.com");
+    $(".wrap_1 p:eq(3) input").val("Korea");
+    $(".wrap_2 p:first").after("<p>After(추가1)<p>");
+    $(".wrap_2 p:first").before("<p>Before(추가2)<p>");
+    $(".wrap_3 p").unwrap().wrapInner("<strong/>");
+    
 });
 </script>
 </head>
