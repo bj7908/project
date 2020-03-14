@@ -6,7 +6,19 @@
 <script src="js/jquery.js"></script>
 <script>
 $(function(){
-	
+	$("#wrap p:hidden").css({
+        "display":"block",
+        "background":"#ff0"
+    });
+    
+    var z1 = $("#zone1 :selected").val();
+    console.log(z1);
+    
+    var z2 = $("#zone2 :checked").val();
+    console.log(z2);
+    
+    var z3 = $("#zone3 :checked").val();
+    console.log(z3);
 });
 </script>
 </head>

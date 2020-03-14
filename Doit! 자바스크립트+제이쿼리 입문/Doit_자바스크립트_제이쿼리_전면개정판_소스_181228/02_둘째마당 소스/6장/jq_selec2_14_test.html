@@ -6,7 +6,15 @@
 <script src="js/jquery.js"></script>
 <script>
 $(function(){
- 
+    $("#inner_1").find(".txt1").css({"background-color":"#ff0"});
+    
+    $("#inner_1 p").filter(".txt2").css({"background-color":"#0ff"});
+    
+    $("#inner_2 p").filter(function(idx,obj){
+        console.log(idx);
+        return idx %2 == 0;
+    })
+    .css({"background-color":"#0f0"});
 });
 </script>
 </head>

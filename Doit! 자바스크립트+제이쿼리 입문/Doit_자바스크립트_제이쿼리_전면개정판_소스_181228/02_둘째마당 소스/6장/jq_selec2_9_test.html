@@ -13,6 +13,17 @@ $(function(){
 			"area":"서울"
 	}
 	
+    //배열안에 값이 몇번째 index에 있는지 찾기
+    var idxNum = $.inArray("전주",arr1);
+    console.log(idxNum);
+    
+    var okArray1 = $.isArray(arr1);
+    var okArray2 = $.isArray(obj);
+    console.log(okArray1);
+    console.log(okArray2);
+    
+    $.merge(arr2, arr1);
+    console.log(arr2);
 });
 </script>
 </head>
